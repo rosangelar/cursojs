@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rosangela de la Rosa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones flecha</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // No tienen nombre. También son anónimas.
+        // Tienen una sintaxis reducir y mantienen el scope
+
+        const msg = 'Text example'
+        var sayHello = (name) => `Hello ${name}`
+        // Recibe por parámetro un nombre y retorna el string directamente
+
+        console.log(sayHello('Pepe'))
+
+        // Esta tiene body (los dos corchetes)
+        // Esto es una función arrow que a la vez es anónima
+        var sayBye = (name) => {return `Bye ${name}`}
+        console.log(sayBye('Pepe'))
+    </script>
+</body>
+</html>

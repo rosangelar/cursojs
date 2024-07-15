@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rosangela de la Rosa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings en JavaScript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Concatenar texto 
+        console.log('Hello ' + 'World')
+
+        // Template literals → Texto que venga de una variable
+        var name = 'Pepe'
+        console.log('Hello ' + name) // Son el template
+        console.log(`Hello ${name}`) // Con el template. OJO son backticks
+
+        // Podemos ver el tipo 
+        console.log(typeof name)
+
+        // La longitud 
+        console.log(name.length)
+
+        // Comprobar si contiene algo 
+        console.log(name.includes('P'))
+        console.log(name.includes('Z'))
+
+        // Cortar el texto 
+        console.log(name.slice(2,3)) // Corta entre 2 y 3 
+        // Empieza en index 0 
+
+        // Reemplazar
+        console.log(name.replace('e', 'a')) // Solo cambia la primera aparición
+
+        // Trim → Quitar espacios 
+        var texto = '  a  d  csds ss'
+        console.log(texto.trim()) // No quita los del medio, solo principio y final
+
+        // Split → Cortar a partir de un elemento
+        var direccion = 'Nombre de la calle, 3, piso 4B'
+        console.log(direccion.split(','))
+    </script>
+s</body>
+</html>

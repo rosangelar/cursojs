@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rosangela de la Rosa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parámetros en JavaScript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // PARAMETROS 
+        // Las funciones pueden o no recibir parámetros, pueden tener un valor por defecto
+        function sum (a, b){ // Recibe dos parámetros, separados por coma
+            console.log(a + b)
+        }
+
+        sum(1, 2) // Llamo a la función y paso las variables por parámetro
+        
+        // Parametros por defecto
+        function sayHello(name = 'World'){
+            console.log('Hello ' + name) // Si no paso el parámetro coge el valor de 'World'
+        }
+
+        sayHello()
+        sayHello('Pepe')
+
+        // Para retornar variables 
+        function sayHello2(name = 'world'){
+            return `Hello ${name}`; // Son backticks!
+        }
+
+        console.log(sayHello2())
+
+
+    </script>
+</body>
+</html>

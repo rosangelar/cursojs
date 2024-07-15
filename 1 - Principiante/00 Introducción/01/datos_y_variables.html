@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rosangela de la Rosa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba variables</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Variable global
+        const constante = 'Constante' 
+        console.log(constante)
+
+        // Variable definida dentro de un entorno
+        // Es "local" al entorno. Fuera de la condición no existe
+
+        if (true) {
+            const helloworld = "Hello world"
+            console.log(helloworld)
+        }
+
+        // Pasa igual con funciones
+        function fun() {
+            const helloworld = "Hello world"
+            console.log(helloworld)
+        }
+
+        // Tipos de variables
+        // Constante = no cambia
+        const nombre = 'Rosangela' 
+
+        // nombre = "Pepe" → Da error porque no puedes cambiar una constante
+        // Dinámicas 
+
+        var text = 'Text'
+        let texto = 'Texto'
+
+        // Sí se pueden cambiar
+        text = "Another text"
+        texto = "Otro texto"
+
+
+    </script>
+</body>
+</html>

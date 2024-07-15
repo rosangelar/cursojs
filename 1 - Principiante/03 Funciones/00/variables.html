@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rosangela de la Rosa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones - variables en JavaScript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function sum () {
+            console.log(2+2)
+        }
+
+        sum()
+
+        // Declarando una variable global 
+        const msg = 'Hello World!'
+
+        function sayHelloWorld(){
+            
+            console.log(msg)
+        }
+
+        sayHelloWorld()
+
+        // Declarando una variable global 
+        const msg2 = 'Hello World!'
+
+        function sayHelloWorld2(){
+            // Si metiera la variable dentro sería local y no podría acceder a ella desde fuera de la función 
+            console.log(msg2)
+        }
+
+        sayHelloWorld2()
+
+
+        // Se le puede cambiar el valor a la variable global (si no es una constante)
+        // Declarando una variable global 
+        let msg3 = 'Hello World!'
+
+        function sayHelloWorld3(){
+            msg3 = 'Hello' 
+            console.log(msg3)
+        }
+
+        sayHelloWorld3()
+    </script>
+</body>
+</html>

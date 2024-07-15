@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rosangela de la Rosa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio aplicando lógica</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const flight = 100; 
+        const hotel = 50; 
+        const tour = 30;
+
+        const total = flight + hotel + tour; 
+        const budget = 300; 
+
+        if (budget > total){
+            console.log('Sí que me voy de viaje')
+        } else if (budget === total){
+            console.log("Sí, pero tengo un presupuesto ajustado")
+        } else {
+            console.log('No, tengo que seguir ahorrando')
+        }
+
+        // Operadores ternarios 
+        // Comprobar si el resultado es algo positivo o algo negativo
+        const result = budget > total 
+            ? console.log('Sí, me voy de viaje') // Si se cumple esta condición muestro este mensaje
+            : console.log('No, no me voy de viaje') // Resultado negativo con los dos puntos
+
+
+    </script>
+</body>
+</html>

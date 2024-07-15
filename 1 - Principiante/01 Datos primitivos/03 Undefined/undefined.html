@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rosangela de la Rosa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined en JavaScript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Ausencia de valor
+        // La variable puede estar defida pero no tiene ningún valor asociado
+        // Comprobación sencilla
+        console.log(a)
+        // Esto da error porque no está definida
+        // Ahora sí coge el valor pero como se usa antes de darle valor se pone como undefined
+        var a = 'var'
+        // Ahora en este console sí muestra valor
+        console.log(a)
+
+
+
+        // Error: no puedes acceder a la variable antes de inicializarla
+        // Las let no se pueden acceder hasta que estén definidas
+        /*console.log(b)
+        let b = 'var b'*/
+        // Deja de leer el resto del fichero si tiene un error de estos    
+
+
+        // La diferencia entre los valores null y undefined es que los null si están definidos (como nulos)
+        console.log(c) // Retorna undefined
+        var c = null
+        console.log(c) // Retorna null
+
+        /*console.log(d)*/ //No puede acceder porque no se ha inicializado
+        let d = null
+        console.log(d) // Retorna null
+
+
+
+       
+
+
+
+
+    </script>
+</body>
+</html>
